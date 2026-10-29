@@ -1,0 +1,264 @@
+/* ==========================================================================
+   Layout and page structure
+   Imported into the "layout" cascade layer.
+   ========================================================================== */
+
+.container {
+  inline-size: min(100% - (var(--gutter) * 2), var(--container));
+  margin-inline: auto;
+}
+
+.container--narrow {
+  inline-size: min(100% - (var(--gutter) * 2), var(--container-narrow));
+  margin-inline: auto;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  min-block-size: var(--header-height);
+}
+
+/* Hero ------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  overflow: clip;
+  padding-block: clamp(3rem, 7vw, 6.5rem);
+}
+
+.hero__inner {
+  display: grid;
+  align-items: center;
+  gap: var(--space-7);
+}
+
+.hero__content {
+  max-inline-size: 42rem;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-block-start: var(--space-7);
+  padding-block-start: var(--space-5);
+  border-block-start: var(--border);
+}
+
+.hero__stat {
+  padding-inline-end: var(--space-4);
+}
+
+.hero__stat + .hero__stat {
+  padding-inline-start: var(--space-4);
+  border-inline-start: var(--border);
+}
+
+/* Sections --------------------------------------------------------------- */
+
+.section {
+  padding-block: var(--space-7);
+}
+
+.section--muted {
+  background-color: var(--color-surface-muted);
+  border-block: var(--border);
+}
+
+.section__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-block-end: var(--space-6);
+}
+
+.section__header > div {
+  display: grid;
+  gap: var(--space-2);
+}
+
+/* Page header ------------------------------------------------------------ */
+
+.page-header {
+  padding-block: var(--space-6);
+  border-block-end: var(--border);
+}
+
+.page-header__inner {
+  display: grid;
+  gap: var(--space-3);
+  max-inline-size: 54rem;
+}
+
+/* Results ---------------------------------------------------------------- */
+
+.results-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-block-end: var(--space-6);
+  padding-block-end: var(--space-4);
+  border-block-end: var(--border);
+}
+
+/* Grids ------------------------------------------------------------------ */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: var(--space-5);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-grid > li {
+  min-inline-size: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--space-6);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Detail page ------------------------------------------------------------ */
+
+.detail-breadcrumb {
+  padding-block-start: var(--space-6);
+  margin-block-end: var(--space-6);
+}
+
+.detail-header {
+  max-inline-size: 54rem;
+}
+
+.detail-media {
+  margin-block-start: var(--space-6);
+}
+
+.detail-layout {
+  display: grid;
+  align-items: start;
+  gap: var(--space-6);
+  margin-block-start: var(--space-7);
+}
+
+.related {
+  margin-block-start: var(--space-8);
+  padding-block-start: var(--space-6);
+  border-block-start: var(--border);
+}
+
+/* Footer ----------------------------------------------------------------- */
+
+.footer__inner {
+  display: grid;
+  gap: var(--space-6);
+}
+
+/* Wide screens ----------------------------------------------------------- */
+
+@media (min-width: 40rem) {
+  .footer__inner {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .footer__nav {
+    justify-self: end;
+    text-align: end;
+  }
+
+  .footer__legal {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 60rem) {
+  .hero__inner {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+}
+
+@media (min-width: 64rem) {
+  .detail-layout {
+    grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 0.8fr);
+  }
+
+  .detail-layout .spec-panel {
+    position: sticky;
+    inset-block-start: calc(var(--header-height) + var(--space-4));
+  }
+}
+
+@media (width < 64rem) {
+  .detail-layout .spec-panel {
+    order: -1;
+  }
+}
+
+/* Entrance motion -------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__content > * {
+    animation: rise-in 600ms var(--ease-out) both;
+  }
+
+  .hero__content > :nth-child(1) {
+    animation-delay: 40ms;
+  }
+
+  .hero__content > :nth-child(2) {
+    animation-delay: 100ms;
+  }
+
+  .hero__content > :nth-child(3) {
+    animation-delay: 160ms;
+  }
+
+  .hero__content > :nth-child(4) {
+    animation-delay: 220ms;
+  }
+
+  .hero__content > :nth-child(5) {
+    animation-delay: 280ms;
+  }
+
+  .hero__media {
+    animation: fade-up 800ms var(--ease-out) 180ms both;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

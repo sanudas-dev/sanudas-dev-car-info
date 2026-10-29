@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">Car Info</title>
+  <rect width="64" height="64" rx="15" fill="#101416"/>
+  <path d="M14 41a18 18 0 0 1 36 0" fill="none" stroke="#f2a93b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M32 41 42 28" fill="none" stroke="#f4f0e7" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="32" cy="41" r="4" fill="#f4f0e7"/>
+</svg>

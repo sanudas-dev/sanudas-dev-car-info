@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Design tokens
+   Imported into the "tokens" cascade layer.
+   Colours switch automatically with the visitor's system preference.
+   ========================================================================== */
+
+:root {
+  color-scheme: light dark;
+
+  /* Typography */
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --font-body: "Aptos", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: clamp(1.1rem, 1.02rem + 0.35vw, 1.28rem);
+  --text-xl: clamp(1.3rem, 1.15rem + 0.7vw, 1.7rem);
+  --text-2xl: clamp(1.7rem, 1.4rem + 1.5vw, 2.5rem);
+  --text-3xl: clamp(2.1rem, 1.55rem + 2.6vw, 3.4rem);
+  --text-display: clamp(2.9rem, 1.7rem + 5.2vw, 5.4rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.3;
+  --leading-body: 1.65;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: clamp(3.5rem, 6vw, 6rem);
+  --space-8: clamp(5rem, 9vw, 8rem);
+
+  /* Layout */
+  --container: 76rem;
+  --container-narrow: 46rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --header-height: 4.75rem;
+
+  /* Shape */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration-med: 320ms;
+
+  /* Colour */
+  --color-bg: light-dark(#f4f0e7, #111517);
+  --color-surface: light-dark(#fffdf8, #182023);
+  --color-surface-muted: light-dark(#ebe5d8, #151c1f);
+  --color-text: light-dark(#171b1d, #f3efe6);
+  --color-text-muted: light-dark(#565f61, #a7b0ad);
+  --color-border: light-dark(#d8d1c2, #2d383b);
+  --color-accent: light-dark(#9a3f0c, #f2a93b);
+  --color-accent-strong: light-dark(#7c330a, #ffc266);
+  --color-accent-soft: light-dark(#f2e2cd, #332615);
+  --color-on-accent: light-dark(#fffdf8, #15191c);
+  --color-focus: light-dark(#1d4ed8, #9bd8ff);
+
+  /* The header and footer keep their own dark palette in both themes. */
+  --color-header-bg: #101416;
+  --color-header-text: #f4f0e7;
+  --color-header-muted: #aab4b3;
+  --color-header-accent: #f2a93b;
+
+  /* Elevation */
+  --border: 1px solid var(--color-border);
+  --shadow-sm: 0 1px 2px rgb(16 20 22 / 0.08);
+  --shadow-md: 0 20px 45px -28px rgb(16 20 22 / 0.45);
+  --shadow-lg: 0 36px 70px -40px rgb(16 20 22 / 0.65);
+
+  /* Page atmosphere */
+  --gradient-page: radial-gradient(
+    circle at 12% -8%,
+    light-dark(rgb(154 63 12 / 0.1), rgb(242 169 59 / 0.08)),
+    transparent 34rem
+  );
+}

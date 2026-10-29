@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cars | Car Info</title>
+    <meta name="description" content="Browse the Car Info garage, a placeholder collection of car profiles with clear specifications and ownership notes.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f4f0e7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111517" media="(prefers-color-scheme: dark)">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Replace example.com and the social image before publishing.
+    <link rel="canonical" href="https://example.com/cars.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cars | Car Info">
+    <meta property="og:description" content="Browse the Car Info garage.">
+    <meta property="og:url" content="https://example.com/cars.html">
+    <meta property="og:image" content="https://example.com/assets/images/og-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Car Info home">
+          <img class="brand__mark" src="assets/icons/logo.svg" alt="" width="40" height="40">
+          <span class="brand__name">Car<span class="brand__accent">Info</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Home</a></li>
+            <li><a class="site-nav__link" href="cars.html" aria-current="page">Cars</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-header">
+        <div class="container page-header__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li aria-current="page">Cars</li>
+            </ol>
+          </nav>
+          <p class="eyebrow">The garage</p>
+          <h1>Browse the collection</h1>
+          <p class="page-header__lede">Every profile follows the same structure: clear specifications, a plain-language overview, and the ownership details that matter after the test drive.</p>
+        </div>
+      </header>
+
+      <section class="section" aria-labelledby="all-cars-title">
+        <div class="container">
+          <div class="results-bar">
+            <h2 id="all-cars-title">All profiles</h2>
+            <p>6 placeholder cars</p>
+          </div>
+
+          <!-- Replace each placeholder card with a real profile and its own detail page. -->
+          <ul class="card-grid">
+            <li>
+              <article class="car-card">
+                <div class="car-card__media">
+                  <img src="assets/images/car-card.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="car-card__body">
+                  <p class="car-card__category">Compact hybrid</p>
+                  <h3 class="car-card__title"><a href="car-detail.html">Example Model S1</a></h3>
+                  <p class="car-card__summary">A quiet, efficient hatchback built around real-world economy and easy daily use.</p>
+                  <dl class="spec-list">
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-speed.svg" alt="" width="16" height="16"> Power</dt>
+                      <dd>201 hp</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-transmission.svg" alt="" width="16" height="16"> Gearbox</dt>
+                      <dd>6-speed auto</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-fuel.svg" alt="" width="16" height="16"> Fuel</dt>
+                      <dd>Petrol hybrid</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="car-card">
+                <div class="car-card__media">
+                  <img src="assets/images/car-card.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="car-card__body">
+                  <p class="car-card__category">Mid-size SUV</p>
+                  <h3 class="car-card__title"><a href="car-detail.html">Example Trail X</a></h3>
+                  <p class="car-card__summary">A seven-seat placeholder for families that need clearance, cargo room, and calm highway manners.</p>
+                  <dl class="spec-list">
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-speed.svg" alt="" width="16" height="16"> Power</dt>
+                      <dd>268 hp</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-transmission.svg" alt="" width="16" height="16"> Gearbox</dt>
+                      <dd>8-speed auto</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-fuel.svg" alt="" width="16" height="16"> Fuel</dt>
+                      <dd>Petrol hybrid</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="car-card">
+                <div class="car-card__media">
+                  <img src="assets/images/car-card.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="car-card__body">
+                  <p class="car-card__category">Electric fastback</p>
+                  <h3 class="car-card__title"><a href="car-detail.html">Example Volt GT</a></h3>
+                  <p class="car-card__summary">A rear-drive placeholder with rapid acceleration, a long range, and a low, quiet cabin.</p>
+                  <dl class="spec-list">
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-speed.svg" alt="" width="16" height="16"> Power</dt>
+                      <dd>402 hp</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-transmission.svg" alt="" width="16" height="16"> Gearbox</dt>
+                      <dd>Single-speed</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-fuel.svg" alt="" width="16" height="16"> Fuel</dt>
+                      <dd>Electric</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="car-card">
+                <div class="car-card__media">
+                  <img src="assets/images/car-card.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="car-card__body">
+                  <p class="car-card__category">City hatch</p>
+                  <h3 class="car-card__title"><a href="car-detail.html">Example Metro City</a></h3>
+                  <p class="car-card__summary">A compact placeholder designed for tight streets, light running costs, and simple parking.</p>
+                  <dl class="spec-list">
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-speed.svg" alt="" width="16" height="16"> Power</dt>
+                      <dd>118 hp</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-transmission.svg" alt="" width="16" height="16"> Gearbox</dt>
+                      <dd>5-speed manual</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-fuel.svg" alt="" width="16" height="16"> Fuel</dt>
+                      <dd>Petrol</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="car-card">
+                <div class="car-card__media">
+                  <img src="assets/images/car-card.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="car-card__body">
+                  <p class="car-card__category">Adventure pickup</p>
+                  <h3 class="car-card__title"><a href="car-detail.html">Example Ridge 4x4</a></h3>
+                  <p class="car-card__summary">A rugged placeholder with low-range gearing, a lockable bed, and honest payload figures.</p>
+                  <dl class="spec-list">
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-speed.svg" alt="" width="16" height="16"> Power</dt>
+                      <dd>310 hp</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-transmission.svg" alt="" width="16" height="16"> Gearbox</dt>
+                      <dd>10-speed auto</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-fuel.svg" alt="" width="16" height="16"> Fuel</dt>
+                      <dd>Diesel</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="car-card">
+                <div class="car-card__media">
+                  <img src="assets/images/car-card.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="car-card__body">
+                  <p class="car-card__category">Touring wagon</p>
+                  <h3 class="car-card__title"><a href="car-detail.html">Example Estate Line</a></h3>
+                  <p class="car-card__summary">A long-roof placeholder for high-mileage drivers who refuse to give up boot space.</p>
+                  <dl class="spec-list">
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-speed.svg" alt="" width="16" height="16"> Power</dt>
+                      <dd>245 hp</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-transmission.svg" alt="" width="16" height="16"> Gearbox</dt>
+                      <dd>8-speed auto</dd>
+                    </div>
+                    <div class="spec-list__item">
+                      <dt><img src="assets/icons/icon-fuel.svg" alt="" width="16" height="16"> Fuel</dt>
+                      <dd>Diesel hybrid</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand" href="index.html" aria-label="Car Info home">
+            <img class="brand__mark" src="assets/icons/logo.svg" alt="" width="40" height="40">
+            <span class="brand__name">Car<span class="brand__accent">Info</span></span>
+          </a>
+          <p class="footer__note">An independent guide to car specifications, trim levels, and ownership essentials.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer">
+          <ul class="footer__nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="car-detail.html">Sample profile</a></li>
+          </ul>
+        </nav>
+
+        <p class="footer__legal">&copy; 2026 Car Info. Placeholder project for demonstration.</p>
+      </div>
+    </footer>
+  </body>
+</html>

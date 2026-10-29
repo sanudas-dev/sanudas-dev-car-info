@@ -1,0 +1,13 @@
+/* ==========================================================================
+   Car Info stylesheet entry point
+   Load order sets the cascade layer order. Later layers win over earlier
+   layers regardless of selector specificity.
+   ========================================================================== */
+
+@layer reset, tokens, base, layout, components;
+
+@import url("reset.css") layer(reset);
+@import url("tokens.css") layer(tokens);
+@import url("base.css") layer(base);
+@import url("layout.css") layer(layout);
+@import url("components.css") layer(components);
